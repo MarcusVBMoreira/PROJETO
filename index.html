@@ -6,15 +6,35 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="assets/estilo.css">
         <link rel="stylesheet" href="assets/java.js">
+        <link rel="stylesheet" href="assets/reset.css">
         <title>Página 1</title>
     </head>
+    <header>
+        <h1>Página 1</h1>
+    </header>
     <body>
         <div class="container">
             <section id="">
             </section>
             <section id="Botões">
+                <script>
+                    document.addEventListener('keydown', function (event){
+                        if (event.key === '<'){
+                            console.log("pressionada \<");
+                            document.getElementById('ant-pg').click();
+                        }
+                        if (event.key === '>') {
+                            console.log("pressionada \>");
+                            document.getElementById('prox-pg').click();
+                        }
+                    });
+
+                    function clicou(link) {
+                        window.location.href = 'pagina2.html'
+                    }
+                </script>
                 <div class="botao_">
-                    <a href="" onclick = "abrirpagina">
+                    <a href="#" id="prox-pg" onclick="clicou(this)">
                         <div class="botao">
                             <p>Avançar</p>
                         </div>
@@ -25,6 +45,5 @@
         <footer>
             
         </footer>
-        
     </body>
 </html>

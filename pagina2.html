@@ -6,23 +6,51 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="assets/estilo.css">
         <link rel="stylesheet" href="assets/java.js">
+        <link rel="stylesheet" href="assets/reset.css">
         <title>Página 2</title>
     </head>
+    <header>
+        <h1>Página 2</h1>
+    </header>
     <body>
         <div class="container">
-            <section id="">
-            </section>
             <section id="Botões">
-                <div class="botao_">
-                    <a href="" onclick = "abrirpagina">
+                <script>
+                    document.addEventListener('keydown', function (event){
+                        if (event.key === '<'){
+                            console.log("pressionada \<");
+                            document.getElementById('ant-pg').click();
+                        }
+                        if (event.key === '>') {
+                            console.log("pressionada \>");
+                            document.getElementById('prox-pg').click();
+                        }
+                    });
+
+                    function clicou(link) {
+                        window.location.href = 'pagina3.html'
+                    }
+                    function voltou(link){
+                        window.location.href = 'index.html'
+                    }
+                </script>
+                <divc class="botao1">
+                    <a href="#" id="ant-pg" onclick="voltou(this)">
                         <div class="botao">
                             <p>Voltar</p>
                         </div>
                     </a>
                 </div>
+                <div class="botao2">
+                    <a href="#" id="prox-pg" onclick="clicou(this)">
+                        <div class="botao">
+                            <p>Avançar</p>
+                        </div>
+                    </a>
+                </div>
             </section>
         <footer>
-        
+            <p>Created by: Marcus Moreira e Maria Eduarda</p>
         </footer>
     </body>
 </html>
