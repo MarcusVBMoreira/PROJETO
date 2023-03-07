@@ -1,8 +1,22 @@
 header{
-    padding: 2%;
+    padding: 1%;
     text-align: center;
     display: inline-flex;
     flex-direction: row;
+    background-color: rgb(255, 238, 228);
+    width: 100%;
+}
+
+header h1{
+    text-align: center;
+   
+}
+
+h1 {
+    text-align: center;
+}
+
+body{
     background-color: rgb(255, 238, 228);
 }
 
@@ -10,28 +24,48 @@ header{
     width: 80%;
     margin: 2%;
     background-color: rgb(255, 238, 228);
+    padding: 5%;
 }
 
 .botao {
-    width: 130px;
-    height: 50px;
-    background-color: black;
-    color: #fff;
-    margin-top: 5%;
-    margin-left: 80%;
+    margin-left: 80%;  
 }
 
-.botao p{
+.botao_avanc p{
     padding-top: 9px;
     margin-top: 2%;
     margin-bottom: 2%;;
     text-align: center;
 }
 
+.botao_volt p{
+    padding-top: 9px;
+    margin-top: 2%;
+    margin-bottom: 2%;;
+    text-align: center;
+}
+
+.botao_avanc{
+    width: 130px;
+    height: 50px;
+    background-color: black;
+    color: #fff;
+
+}
+
+.botao_volt{
+    width: 130px;
+    height: 50px;
+    background-color: black;
+    color: #fff;
+
+}
+
 footer{
-    padding-top: 5%;
-    padding-bottom: 5%;
-    margin-top: 15%;
+    padding-top: 1%;
+    padding-bottom: 3%;
+    margin-top: 10%;
+    background-color: rgb(241, 210, 237);
 }
 
 footer p{
@@ -46,4 +80,8 @@ footer p{
     margin-left: 20%;
     padding: 2%;
     background-color: rgb(248, 229, 206);
+}
+
+.botoes {
+    display: inline-block;
 }
